@@ -32,7 +32,7 @@ public class Student {
         return studentService.updateStudent(id, name, university, adhar, age);
     }
 
-    @GetMapping("/get/{university}")
+    @GetMapping("/getByUniv/{university}")
     public List<StudentDataModel> getStudentByUniversity(@PathVariable String university)throws Exception{
         return studentService.getStudentByUniversity(university);
     }
